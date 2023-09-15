@@ -22,8 +22,6 @@ const SupportDev = () => {
   });
 
   const handlesubmit = async (values) => {
-    console.log(values.amount);
-
     const options = {
       key: import.meta.env.VITE_RAZAR_KEY,
       key_secret: import.meta.env.VITE_RAZAR_SECRET,
