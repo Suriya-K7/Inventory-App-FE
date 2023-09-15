@@ -147,7 +147,7 @@ const AddProduct = () => {
                     {isLoading ? (
                       <span className='spinner-border spinner-border-sm text-warning'></span>
                     ) : (
-                      "Update"
+                      "Add Items"
                     )}
                   </button>
                 </div>

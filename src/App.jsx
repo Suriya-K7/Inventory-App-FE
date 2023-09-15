@@ -18,6 +18,8 @@ import ReportBug from "./pages/ReportBug/ReportBug";
 import EditProfile from "./pages/EditProfile/EditProfile";
 import ProductDetails from "./pages/Product/ProductDetails/ProductDetails";
 import ProductEdit from "./pages/Product/ProductEdit/ProductEdit";
+import SupportDev from "./pages/supportDev/SupportDev";
+import SupportDev2 from "./pages/supportDev/SupportDev2";
 
 function App() {
   const { loggedUser } = useContext(DataContext);
@@ -61,6 +63,10 @@ function App() {
               path='/*'
               element={<LoggedOut />}
             />
+            <Route
+              path='/supportdev'
+              element={<SupportDev2 />}
+            />
           </>
         )}
         {loggedUser && (
@@ -96,6 +102,10 @@ function App() {
             <Route
               path='/product/edit/:id'
               element={<ProductEdit />}
+            />
+            <Route
+              path='/supportdev'
+              element={<SupportDev />}
             />
           </>
         )}

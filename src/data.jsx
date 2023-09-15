@@ -1,4 +1,4 @@
-import { FaBug, FaPowerOff, FaHome } from "react-icons/fa";
+import { FaBug, FaPowerOff, FaHome, FaMoneyCheckAlt } from "react-icons/fa";
 import {
   BsFillDiagram3Fill,
   BsDatabaseFillAdd,
@@ -30,6 +30,12 @@ export const navBarLink = [
     name: "Profile",
     icon: <BsPersonVcard />,
     link: "/profile",
+  },
+  {
+    id: 6,
+    name: "Donate",
+    icon: <FaMoneyCheckAlt />,
+    link: "/supportdev",
   },
   {
     id: 4,

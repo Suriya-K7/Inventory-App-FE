@@ -3,6 +3,8 @@ import "./home.css";
 import { Link } from "react-router-dom";
 import LOGO from "../../assets/logo.png";
 import DataContext from "../../context/DataContext";
+import { FaHandHoldingHeart } from "react-icons/fa";
+import { BsFillDiagram3Fill } from "react-icons/bs";
 
 const Home = () => {
   const { loggedUser } = useContext(DataContext);
@@ -17,14 +19,13 @@ const Home = () => {
           />
         </div>
         <div className='home__button'>
-          <button className='btn btn-primary'>Support The Developer</button>
           {loggedUser ? (
             <>
               <Link
                 to='/dashboard'
                 className='btn btn-primary scale transition'
               >
-                Dashboard
+                <BsFillDiagram3Fill /> Dashboard
               </Link>
             </>
           ) : (
@@ -49,6 +50,12 @@ const Home = () => {
         <div className='text-center'>
           Welcome to Invetory app.
           <br /> In this app You can manage Stock Inventory.
+          <br />
+          <Link to={"/supportdev"}>
+            <button className='btn btn-primary mt-2'>
+              Support The Developer <FaHandHoldingHeart />
+            </button>
+          </Link>
         </div>
       </main>
     </div>
