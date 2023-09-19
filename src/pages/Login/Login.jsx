@@ -83,6 +83,13 @@ const Login = () => {
               >
                 Not Register? Sign up
               </Link>
+              <button
+                className='btn mt-2 instruction forgot'
+                data-bs-toggle='modal'
+                data-bs-target='#myModal'
+              >
+                Demo Credentials
+              </button>
             </div>
           </div>
         </div>
@@ -92,6 +99,38 @@ const Login = () => {
             className='banner'
             alt='..'
           />
+        </div>
+      </div>
+      <div
+        className='modal'
+        id='myModal'
+      >
+        <div className='modal-dialog'>
+          <div className='modal-content'>
+            <div className='modal-header'>
+              <h4 className='modal-title'>Welcome to Inventory Management</h4>
+            </div>
+            <div className='modal-body'>
+              <span className='text-secondary text-justify'>
+                The inventory management app provides businesses with a
+                streamlined solution to track, manage, and optimize their stock
+                levels efficiently.
+                <hr />
+                for Login use below ID or create new one: <br />
+                <span className='mx-5'> Email : demo@gmail.com</span> <br />
+                <span className='mx-5'> password : demo@123</span>
+              </span>
+            </div>
+            <div className='modal-footer'>
+              <button
+                type='button'
+                className='btn btn-danger'
+                data-bs-dismiss='modal'
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <ToastContainer
